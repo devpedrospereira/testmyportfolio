@@ -1,27 +1,30 @@
 import styles from './styles.module.scss'
 
-export default function Technology(){
-    
+export default function Technology() {
 
-    return(
+
+    return (
         <div className={styles.container}>
+            <h1>Tecnologias</h1>
             <div className={styles.listContacts}>
                 <ul>
                     <li>
-                        <img src="./assets/instagram.svg" alt="instagram" />
-                        <a href="https://www.instagram.com/devpedropereira/">devpedropereira</a>
+                        <div><p>JAVASCRIP</p></div>
                     </li>
                     <li>
-                        <img src="./assets/instagram.svg" alt="instagram" />
-                        <a href="https://www.instagram.com/devpedropereira/">devpedropereira</a>
+                        <div><p>REACTJS</p></div>
                     </li>
                     <li>
-                        <img src="./assets/instagram.svg" alt="instagram" />
-                        <a href="https://www.instagram.com/devpedropereira/">devpedropereira</a>
+                        <div><p>NODEJS</p></div>
                     </li>
                     <li>
-                        <img src="./assets/instagram.svg" alt="instagram" />
-                        <a href="https://www.instagram.com/devpedropereira/">devpedropereira</a>
+                        <div><p>GIT</p></div>
+                    </li>
+                    <li>
+                        <div><p>HTML</p></div>
+                    </li>
+                    <li>
+                        <div><p>CSS</p></div>
                     </li>
                 </ul>
             </div>
