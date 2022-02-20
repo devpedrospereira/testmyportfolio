@@ -12,12 +12,17 @@
     
     gap: 1.87rem;
     border-radius: 1.25rem;
-
+    border: 1px solid var(--red);
+    
     overflow: hidden;
     
 
 
     background-color: var(--violet-light-bg);
+}
+.container:hover{
+    box-shadow: 0 0 0.3rem var(--red);
+
 }
 .listContacts{
     ul{
