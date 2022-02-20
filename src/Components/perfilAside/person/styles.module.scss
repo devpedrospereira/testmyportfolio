@@ -1,0 +1,64 @@
+.container {
+    width: 21.75rem;
+    height: 18.25rem;
+
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    gap: 1.87rem;
+    border-radius: 1.25rem;
+
+    background-color: var(--violet-light-bg);
+}
+
+.avatar{
+    width: 8.3rem;
+    height: 8.3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius:100%;
+    background: var(--red);
+    place-items: center;
+
+    .useravatar{
+        width: 8rem;
+        height: 8rem;
+        border-radius:100%;
+    }
+    // Ativar animação de arco-íris
+    // @keyframes color-rotate {
+    //     from{
+    //         filter: hue-rotate(0deg);
+    //     }
+    //     to{
+    //         filter: hue-rotate(360deg);
+    //     }
+    // }
+    // :hover{
+    //     cursor: pointer;
+    //     animation: color-rotate 1s;
+    //     animation-iteration-count: infinite;
+    //     animation-direction: alternate;
+    // }
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--violet-light-text);
+    .name{
+        font-size: 1.43rem;
+    }
+    .stack{
+        font-size: 0.81rem;
+    }
+}
