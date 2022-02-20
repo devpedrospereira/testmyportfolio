@@ -1,5 +1,8 @@
+import Education from "../Components/perfilAside/education"
+import Experience from "../Components/perfilAside/experience"
 import InfosOfContact from "../Components/perfilAside/infosofcontact"
 import Person from "../Components/perfilAside/person/index"
+import Technology from "../Components/perfilAside/technology"
 import styles from "../styles/Home.module.css"
 
 export default function Home() {
@@ -11,6 +14,12 @@ export default function Home() {
           <Person />
           {/* Card de informações para contato*/}
           <InfosOfContact />
+
+          <Technology/>
+
+          <Experience/>
+
+          <Education/>
         </section>
 
         <section className={styles.main}>
