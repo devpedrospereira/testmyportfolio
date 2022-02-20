@@ -17,6 +17,10 @@
     overflow: hidden;
     
 
+    h1{
+        color: var(--violet-light-text);
+        font-size: 20px;
+    }
 
     background-color: var(--violet-light-bg);
 }
@@ -33,11 +37,17 @@
         >li{
             
             display:flex;
-            align-items:center;
-            gap: 0.80rem;
+            align-items:flex-start;
+            flex-direction: column;
 
-            font-size: 13px;
             color: var(--violet-light-text);
+            h2{
+                font-weight:bold;
+                font-size:14px;
+            }
+            p{
+                font-size:12px;
+            }
         }
     }
 }
