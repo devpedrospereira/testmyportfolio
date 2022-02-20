@@ -1,0 +1,38 @@
+.container {
+    max-width: 21.75rem;
+    min-height: 5.25rem;
+
+    margin: 0;
+    padding: 1.87rem 1.87rem 1.87rem 2.5rem;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    gap: 1.87rem;
+    border-radius: 1.25rem;
+
+    overflow: hidden;
+    
+
+
+    background-color: var(--violet-light-bg);
+}
+.listContacts{
+    ul{
+        display:flex;
+        align-items:flex-start;
+        flex-direction: column;
+        gap: 1.25rem;
+        >li{
+            
+            display:flex;
+            align-items:center;
+            gap: 0.80rem;
+
+            font-size: 13px;
+            color: var(--violet-light-text);
+        }
+    }
+}
