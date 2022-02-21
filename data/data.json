@@ -24,5 +24,35 @@
             "description":"LinkedIn",
             "img":"./assets/linkedin.svg"
         }
+    ],
+
+    "technologys":[
+        {
+            "technology":"JAVASCRIP"
+        },
+        {
+            "technology":"REACT-JS"
+        },
+        {
+            "technology":"NODE-JS"
+        },
+        {
+            "technology":"NEXT-JS"
+        },
+        {
+            "technology":"HTML5"
+        },
+        {
+            "technology":"CSS3"
+        },
+        {
+            "technology":"SASS"
+        },
+        {
+            "technology":"GIT"
+        },
+        {
+            "technology":"GITHUB"
+        }
     ]
 }

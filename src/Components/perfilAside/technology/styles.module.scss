@@ -36,15 +36,26 @@
 
         >li{
             div{
-                padding: 0.47rem  1rem;  
+                display:flex;
+                align-items:center;
+                justify-content:center;                
+                padding: 0.47rem  0.7rem;  
                 background-color: var(--red);
                 border-radius: 1.25rem;
             }
             p{
                 color: white;
-                font-size: 13px;
+                font-size: 12px;
                 font-weight: bold;
+            }
 
+        }            
+        :hover{
+            div{
+                background-color: var(--violet-bg);
+            }
+            p{
+                color: var(--red);
             }
         }
     }
