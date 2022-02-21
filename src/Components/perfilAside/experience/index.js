@@ -1,6 +1,21 @@
 import styles from './styles.module.scss'
+import data from '../../../../data/data.json'
 
 export default function Experience(){
+    const newdata = JSON.parse(JSON.stringify(data))
+
+    const experience = newdata.experiences.map((item,index) => {
+        const {instituition, period, job} = item
+
+        return (
+            <li key={index}>
+            <h2>{instituition}</h2>
+            <p>{period}</p>
+            <p>{job}</p>
+        </li>
+        )
+
+    })
     
 
     return(
@@ -8,21 +23,7 @@ export default function Experience(){
             <h1>Experiências</h1>
             <div className={styles.listContacts}>
                 <ul>
-                    <li>
-                        <h2>RocketSeat</h2>
-                        <p>2019 - Atualmente</p>
-                        <p>Community Experience</p>
-                    </li>
-                    <li>
-                        <h2>RocketSeat</h2>
-                        <p>2019 - Atualmente</p>
-                        <p>Community Experience</p>
-                    </li>
-                    <li>
-                        <h2>RocketSeat</h2>
-                        <p>2019 - Atualmente</p>
-                        <p>Community Experience</p>
-                    </li>
+                    {experience}
                 </ul>
             </div>
         </div>

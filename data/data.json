@@ -54,5 +54,16 @@
         {
             "technology":"GITHUB"
         }
+    ],
+
+    "experiences":[
+        {
+            "instituition":"NetalCode",
+            "period":"2021 - Atual",
+            "job":"Dev Front-End Junior"
+        }
     ]
+    
+
+
 }
