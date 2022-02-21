@@ -38,6 +38,11 @@
 
             font-size: 13px;
             color: var(--violet-light-text);
+            >a{
+                display:flex;
+                align-items:center;
+                gap: 0.80rem;
+            }
         }
     }
 }
