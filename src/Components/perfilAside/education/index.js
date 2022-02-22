@@ -1,33 +1,28 @@
 import styles from './styles.module.scss'
+import data from '../../../../data/data.json'
+
 
 export default function Experience(){
-    
+    const newdata = JSON.parse(JSON.stringify(data))
+
+    const educations = newdata.educations.map((item,index) => {
+        const {instituition, period, course} = item
+
+        return (
+            <li key={index}>
+                <h2>{instituition}</h2>
+                <p>{period}</p>
+                <p>{course}</p>
+            </li>
+        )
+    })
 
     return(
         <div className={styles.container}>
             <h1>Educação</h1>
             <div className={styles.listContacts}>
                 <ul>
-                    <li>
-                        <h2>Secretaria de Educação</h2>
-                        <p>2017 - 2018</p>
-                        <p>Analise e desenvolvimento de sistemas</p>
-                    </li>
-                    <li>
-                        <h2>Instituto Federal</h2>
-                        <p>2018 - 2020</p>
-                        <p>Sistemas para Internet</p>
-                    </li>
-                    <li>
-                        <h2>RocketSeat</h2>
-                        <p>2019 - Atualmente</p>
-                        <p>Community Experience</p>
-                    </li>
-                    <li>
-                        <h2>RocketSeat</h2>
-                        <p>2019 - Atualmente</p>
-                        <p>Community Experience</p>
-                    </li>
+                    {educations}
                 </ul>
             </div>
         </div>

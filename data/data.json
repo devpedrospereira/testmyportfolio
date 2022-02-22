@@ -62,8 +62,33 @@
             "period":"2021 - Atual",
             "job":"Dev Front-End Junior"
         }
-    ]
+    ],
     
-
-
+    "educations":[
+        {
+            "instituition":"Secretaria de Educação do Pernambuco",
+            "period":"2017 - 2018",
+            "course":"Análise e desenvolvimento de sistemas"
+        },
+        {
+            "instituition":"Instituto Federal",
+            "period":"2018 - 2020",
+            "course":"Sistemas para Internet"
+        },
+        {
+            "instituition":"Cod3r Cursos",
+            "period":"2021 - Atual",
+            "course":"Web Moderno Completo com JavaScript 2021"
+        },
+        {
+            "instituition":"RocketSeat",
+            "period":"2021 - 2021",
+            "course":"Discovery"
+        },
+        {
+            "instituition":"RocketSeat",
+            "period":"2021 - Atual",
+            "course":"Ignite"
+        }
+    ]
 }
