@@ -1,0 +1,19 @@
+.container{
+    max-width: 59.5rem;
+    height: 100%;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    display:flex;
+
+    header{
+        width:100%;
+        height: 5.37rem;
+
+        border-radius: 1.25rem;
+
+        background-color: var(--violet-light-bg);
+    }
+}

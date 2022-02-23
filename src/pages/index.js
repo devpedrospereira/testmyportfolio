@@ -1,9 +1,10 @@
+import MyProjects from "../Components/contentMain/myProjects"
 import Education from "../Components/perfilAside/education"
 import Experience from "../Components/perfilAside/experience"
 import InfosOfContact from "../Components/perfilAside/infosofcontact"
 import Person from "../Components/perfilAside/person/index"
 import Technology from "../Components/perfilAside/technology"
-import styles from "../styles/Home.module.css"
+import styles from "../styles/Home.module.scss"
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         </section>
 
         <section className={styles.main}>
-
+          <MyProjects/>
         </section>
 
       </body>
