@@ -15,12 +15,6 @@
     border: 1px solid var(--red);
 
     overflow: hidden;
-    
-
-    h1{
-        color: var(--violet-light-text);
-        font-size: 20px;
-    }
 
     background-color: var(--violet-light-bg);
 }
@@ -40,14 +34,6 @@
             align-items:flex-start;
             flex-direction: column;
 
-            color: var(--violet-light-text);
-            h2{
-                font-weight:bold;
-                font-size:14px;
-            }
-            p{
-                font-size:12px;
-            }
         }
     }
 }
