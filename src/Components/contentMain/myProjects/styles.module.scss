@@ -1,5 +1,6 @@
 .container{
-    max-width: 59.5rem;
+    width: 100%;
+
     height: 100%;
 
     margin: 0;
@@ -9,11 +10,29 @@
     display:flex;
 
     header{
-        width:100%;
+        width: 100vw;
+        // max-width:100%;
         height: 5.37rem;
+        
+        padding:1.87rem;
 
         border-radius: 1.25rem;
 
         background-color: var(--violet-light-bg);
+
+        
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+    @media (max-width: 1024px) {
+        
+        height: 100%;
+
+        flex-direction: column;
+
+  
+      }
     }
 }

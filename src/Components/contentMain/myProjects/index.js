@@ -5,7 +5,8 @@ export default function MyProjects(){
     return(
         <div className={styles.container}>
             <header>
-            aaaaaaaaaaaa
+            <h1>Meus Projetos</h1>
+            <h2>Veja todos</h2>
             </header>
         </div>
     )
