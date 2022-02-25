@@ -1,9 +1,10 @@
 .container{
   width: 100%;
   height: 100%;
+
+  min-width: 25.87rem; 
   
   padding: 2.5rem;
-  margin: 0;
 
   display: flex;
 
@@ -26,7 +27,6 @@
     @media (max-width: 1024px) {
     // Modifica o posicionamento dos components em monitores < 1024px
       // justify-content:center;
-      
     }
 
   }
