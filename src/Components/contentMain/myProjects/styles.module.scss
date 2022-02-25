@@ -1,81 +1,92 @@
-.container{
+.container {
     width: 100%;
     height: 100%;
 
     box-sizing: border-box;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
 
-    .header{
+    .header {
         width: 60vw;
         height: 5.37rem;
-        
-        padding:1.87rem;
+
+        padding: 1.87rem;
         border-radius: 1.25rem;
 
         background-color: var(--violet-light-bg);
 
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: space-between;
-        
-    @media (max-width: 1024px) {
-        width: 100%;    
-        height: 100%;
 
-        flex-direction: column;
-      }
+        @media (max-width: 1024px) {
+            width: 100%;
+            height: 100%;
+
+            flex-direction: column;
+        }
     }
-    .cards{
+    .cards {
         display: grid;
         gap: 1.87rem;
         grid-template-areas:
             "a b"
-            "c d";
-
+            "c d"
+            "e f";
+        // permite apenas 6 cars na tela, para alterar, some a quantidade de cards desejada + 1, substitua pelo "7"
         :nth-child(n + 7) {
             display: none;
-            margin:0;
+            // margin: 0;
         }
-        >:nth-child(-n + 2 ){
+        // margin nos dois primeiros cards
+        > :nth-child(-n + 2) {
             margin-top: 1.87rem;
         }
-
-    .card{
-        width:100%;
+    }
+    .card {
+        // o calc abaixo foi utilizado para tornar os cards responsivos, de acordo com a tela do dispositivo
+        width: calc(30vw - 1rem);
         height: 11.62rem;
 
         display: flex;
         flex-direction: column;
 
         padding: 1.87rem;
-    
+
         border-radius: 1.25rem;
 
         background-color: var(--violet-light-bg);
-        margin 
 
-        #repository{
-            display:flex
+        #repository {
+            display: flex;
+            gap: 0.5rem;
         }
-        #description{
-            display:flex
+        #description {
+            display: flex;
+            margin-top: 1.87rem;
         }
-        #statistics{
-            display:flex;
+        #statistics {
+            display: flex;
             justify-content: space-between;
+            margin-top: 1.87rem;
 
-            #nambers{
-                display:flex;
+            #nambers {
+                display: flex;
+                gap: 0.5rem;
 
+                :nth-child(2) {
+                    // Para separar a quantidade de estrelas, da quantidade de forks
+                    margin-right: 0.5rem;
+                }
             }
-            #nambers{
-                display:flex;
+            #language {
+                display: flex;
 
+                gap: 0.5rem;
+
+                font-weight: bold;
             }
         }
-
-    }
     }
 }
