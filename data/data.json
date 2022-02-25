@@ -148,5 +148,6 @@
             "works":"1233",
             "language":"JavaScript"
         }
-    ]
+    ],
+    "api_github":"https://api.github.com/users/devpedrospereira"
 }

@@ -1,20 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './styles.module.scss'
+import { useEffect, useState } from 'react'
 import data from '../../../../data/data.json'
 
 export default function MyProjects(){
     const newdata = JSON.parse(JSON.stringify(data))
 
-    const cards = newdata.git.map((item,index) =>{
+    // console.log(newdata.api_github.repos_url)
+    const [repository, setRepository] = useState([]);
 
-        const {repository, description, stars, forks, language} = item;
+    
+    useEffect(() =>{
+        // primeiro pega as informações pelo link do perfil, (que esta salvo no data.jason) depois transforma a resposta em json
+        fetch(`${newdata.api_github}`)
+            .then(response => response.json())
+            .then(data => {
+                // aqui, com os dados completos do perfil, entra no array de repositorios, e armazena em uma variavel (setRepository(data))
+                fetch(data.repos_url)
+                    .then(response => response.json())
+                    .then(data => setRepository(data))
+            })
+    },[])
 
+    // console.log(repository)
+
+    const cards = repository.map((item,index) =>{
+
+        const {name, description, stargazers_count, forks_count, language, html_url} = item;
         // o if abaixo, verifica se existe valores dentro das constantes acima, se existir, continuar o return normamente, se não, não retorna nada!
-        if (repository) return(
+        if (name, description) return(
+            <a href={html_url} target="_blank" rel="noreferrer">
             <div key={index} className={styles.card}>
-                <div id={styles.repository}>
+                <div id={styles.name}>
                     <img src="./assets/folder.svg" alt="Repositório" />
-                    <h2>{repository}</h2>
+                    <h2>{name}</h2>
                 </div>
 
                 <div id={styles.description}>
@@ -23,10 +42,10 @@ export default function MyProjects(){
 
                 <div id={styles.statistics}>
                     <div id={styles.nambers}>
-                        <img src="./assets/star.svg" alt="Estrelas" />
-                        <p>{stars}</p>
-                        <img src="./assets/git-branch.svg" alt="forcks" />
-                        <p>{forks}</p>
+                        <img src="./assets/star.svg" alt="stars" />
+                        <p>{stargazers_count}</p>
+                        <img src="./assets/git-branch.svg" alt="forks" />
+                        <p>{forks_count}</p>
                     </div>
                     
                     <div id={styles.language}>
@@ -36,6 +55,7 @@ export default function MyProjects(){
                     </div>
                 </div>
             </div>
+            </a>
         )
     })
 
