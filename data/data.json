@@ -90,5 +90,22 @@
             "period":"2021 - Atual",
             "course":"Ignite"
         }
+    ],
+    "git":[
+        {
+            "repository":"myportfolio",
+            "description":"portifolio Web Moderno Completo com JavaScript 2021",
+            "stars":"21",
+            "works":"1233",
+            "language":"JavaScript"
+        },
+        {
+            "repository":"myportfolio",
+            "description":"portifolio Web Moderno Completo com JavaScript 2021",
+            "stars":"21",
+            "works":"1233",
+            "language":"JavaScript"
+        },
+        {},{},{},{},{}
     ]
 }

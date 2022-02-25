@@ -16,6 +16,7 @@ export default function Experience(){
             </li>
         )
     })
+    // console.log(newdata.educations)
 
     return(
         <div className={styles.container}>
