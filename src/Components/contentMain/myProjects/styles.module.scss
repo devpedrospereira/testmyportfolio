@@ -24,6 +24,8 @@
             width: 100%;
             height: 100%;
 
+            gap:0.5rem;
+
             flex-direction: column;
         }
     }
@@ -39,11 +41,28 @@
             display: none;
             // margin: 0;
         }
-        // margin nos dois primeiros cards
+        // margin para os primeiros cards
         > :nth-child(-n + 2) {
             margin-top: 1.87rem;
+
+            @media (max-width: 1024px) {
+                margin-top: 0rem;
+            
+            }
+            
         }
+        @media (max-width: 1024px) {
+            // Modifica o posicionamento dos components em monitores < 1024px
+            display: flex;
+            flex-direction: column;
+
+            // margin para o primeiro card
+            > :nth-child(1) {
+                margin-top: 1.87rem;
+            }
+        }  
     }
+
     .card {
         // o calc abaixo foi utilizado para tornar os cards responsivos, de acordo com a tela do dispositivo
         width: calc(30vw - 1rem);
@@ -88,5 +107,12 @@
                 font-weight: bold;
             }
         }
+
+        @media (max-width: 1024px) {
+            // Modifica o posicionamento dos components em monitores < 1024px
+            width: 21.75rem;
+            
+        }  
+    
     }
 }
