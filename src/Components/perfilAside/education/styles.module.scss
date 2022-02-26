@@ -11,17 +11,21 @@
     flex-direction: column;
     
     gap: 1.87rem;
+
     border-radius: 1.25rem;
     border: 1px solid var(--red);
+    box-shadow: 2px 2px  2px 1px var(--box-shadow);
+
 
     overflow: hidden;
 
     background-color: var(--violet-light-bg);
 }
-.container:hover{
-    box-shadow: 0 0 0.3rem var(--red);
+// .container:hover{
+//     box-shadow: 0 0 0.6rem var(--red);
+//     transition: 0.5s;
 
-}
+// }
 .listContacts{
     ul{
         display:flex;

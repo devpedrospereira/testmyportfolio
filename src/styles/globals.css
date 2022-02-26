@@ -2,8 +2,12 @@
   /* backgraund */
   --violet-bg: #22212C;
   --violet-light-bg: #302F3D;
-  --red: #cc1111;
+  --red: #c73030;
+
+  /* box-shadow */
   
+  --box-shadow: rgba(0,0,0,0.2);
+
   /* texts */
   --violet-light-text: #837E9F; 
 }
