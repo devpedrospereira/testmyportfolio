@@ -6,13 +6,14 @@ export default function InfosOfContact(){
     const newdata = JSON.parse(JSON.stringify(data))
 
     const infos = newdata.social.map((item,index) => {
-        const {id, link, description, img} = item
+        const {link, description, img} = item
 
         return(
             <li key={index.toString() } className={styles.li}>
-                <a href={link}>
+                {/* A função ternaria abaixo, permite abrir uma nova aba, ou não, dependendo se a informação tem link ou não.*/}
+                <a href={link} target={(!link)? "_self" : "_blank"} rel="noreferrer">
                     <img src={img} alt={description} />                    
-                    {description}
+                    <p>{description}</p>
                 </a>
             </li>
         )
