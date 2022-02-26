@@ -13,7 +13,7 @@ export default function InfosOfContact(){
                 {/* A função ternaria abaixo, permite abrir uma nova aba, ou não, dependendo se a informação tem link ou não.*/}
                 <a href={link} target={(!link)? "_self" : "_blank"} rel="noreferrer">
                     <img src={img} alt={description} />                    
-                    {description}
+                    <p>{description}</p>
                 </a>
             </li>
         )
