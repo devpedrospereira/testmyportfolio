@@ -67,8 +67,54 @@
             "technology":"GITHUB"
         }
     ],
+    "languages":[
+        {
+            "language":"Português",
+            "level":"Avançado"
+        },
+        {
+            "language":"Inglês",
+            "level":"Intermediário"
+        }
+    ],
+    "know_hows":[
+        {
+            "know-how":"liderança"
+        },
+        {
+            "know-how":"Organização"
+        },
+        {
+            "know-how":"Proatividade"
+        },
+        {
+            "know-how":"Foco"
+        },
+        {
+            "know-how":"Competitividade"
+        },
+        {
+            "know-how":"Flexibilidade"
+        },
+        {
+            "know-how":"Adaptabilidade"
+        },
+        {
+            "know-how":"Comprometimento"
+        }
+    ],
 
     "experiences":[
+        {
+            "instituition":"Pereira Tecnologia",
+            "period":"2016 - Atual",
+            "job":"CEO - Gestão Geral"
+        },
+        {
+            "instituition":"IC Arquitetura e Urbanismo",
+            "period":"2017 - 2018",
+            "job":"Gerente de Projetos"
+        },
         {
             "instituition":"NetalCode",
             "period":"2021 - Atual",
@@ -103,63 +149,6 @@
             "course":"Ignite"
         }
     ],
-    "git":[
-        {
-            "repository":"myportfolio",
-            "description":"Portifolio Web Moderno Completo com JavaScript 2021 Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        },
-        {
-            "repository":"myportfolio",
-            "description":"portifolio Web Moderno Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        },
-        {
-            "repository":"myportfolio",
-            "description":"portifolio Web Moderno Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        },
-        {
-            "repository":"myportfolio",
-            "description":"portifolio Web Moderno Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        },
-        {
-            "repository":"myportfolio",
-            "description":"portifolio Web Moderno Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        },
-        {
-            "repository":"myportfolio",
-            "description":"portifolio Web Moderno Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        },
-        {
-            "repository":"myportfolio",
-            "description":"portifolio Web Moderno Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        },
-        {
-            "repository":"myportfolio",
-            "description":"portifolio Web Moderno Completo com JavaScript 2021",
-            "stars":"21",
-            "works":"1233",
-            "language":"JavaScript"
-        }
-    ],
+
     "api_github":"https://api.github.com/users/devpedrospereira"
 }

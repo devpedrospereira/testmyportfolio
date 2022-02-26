@@ -17,12 +17,15 @@ export default function Technology() {
 
     return (
         <div className={styles.container}>
-            <h1>Tecnologias</h1>
-            <div className={styles.listContacts}>
+            <h1>Habilidades</h1>
+            <div className={styles.listTecnology}>
+                <h2>Tecnologias</h2>
                 <ul>
                     {technologys}
                 </ul>
             </div>
+
+
         </div>
     )
 }
