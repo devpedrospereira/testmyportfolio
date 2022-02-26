@@ -77,30 +77,30 @@
             "level":"Intermediário"
         }
     ],
-    "know_hows":[
+    "skills":[
         {
-            "know-how":"liderança"
+            "skill":"liderança"
         },
         {
-            "know-how":"Organização"
+            "skill":"Organização"
         },
         {
-            "know-how":"Proatividade"
+            "skill":"Proatividade"
         },
         {
-            "know-how":"Foco"
+            "skill":"Foco"
         },
         {
-            "know-how":"Competitividade"
+            "skill":"Competitividade"
         },
         {
-            "know-how":"Flexibilidade"
+            "skill":"Flexibilidade"
         },
         {
-            "know-how":"Adaptabilidade"
+            "skill":"Adaptabilidade"
         },
         {
-            "know-how":"Comprometimento"
+            "skill":"Comprometimento"
         }
     ],
 
