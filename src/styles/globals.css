@@ -12,6 +12,12 @@
   --violet-light-text: #837E9F; 
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html{
   padding: 0;
   margin: 0;
@@ -45,9 +51,5 @@ p{
 }
 
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
 

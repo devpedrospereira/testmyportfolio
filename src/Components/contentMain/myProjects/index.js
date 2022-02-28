@@ -5,10 +5,12 @@ import data from '../../../../data/data.json'
 
 export default function MyProjects(){
     const newdata = JSON.parse(JSON.stringify(data))
+    console.log(newdata.social[3].link)
 
     // console.log(newdata.api_github.repos_url)
     const [repository, setRepository] = useState([]);
 
+    // console.log(newdata)
     
     useEffect(() =>{
         // primeiro pega as informações pelo link do perfil, (que esta salvo no data.jason) depois transforma a resposta em json
@@ -22,7 +24,7 @@ export default function MyProjects(){
             })
     },[])
 
-    // console.log(repository)
+    // console.log(data)
 
     const cards = repository.map((item,index) =>{
 
@@ -64,7 +66,7 @@ export default function MyProjects(){
             <section>
                 <header className={styles.header}>
                     <h1>Meus Projetos</h1>
-                    <h2>Veja todos</h2>
+                    <a href={newdata.social[3].link} target="_blank " rel="noreferrer">Meu Github</a>
                 </header>
 
                 <div className={styles.cards}>
