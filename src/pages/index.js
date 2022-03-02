@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.scss"
 export default function Home() {
   return (
     <>
-      <body className={styles.container}>
+      <div className={styles.container}>
         <section className={styles.aside}>
           {/* Card do usuario */}
           <Person />
@@ -27,7 +27,7 @@ export default function Home() {
           <MyProjects/>
         </section>
 
-      </body>
+      </div>
     </>
   )
 }
