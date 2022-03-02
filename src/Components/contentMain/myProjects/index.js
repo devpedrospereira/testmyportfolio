@@ -31,8 +31,8 @@ export default function MyProjects(){
         const {name, description, stargazers_count, forks_count, language, html_url} = item;
         // o if abaixo, verifica se existe valores dentro das constantes acima, se existir, continuar o return normamente, se não, não retorna nada!
         if (name, description) return(
-            <a href={html_url} target="_blank" rel="noreferrer">
-            <div key={index} className={styles.card}>
+            <a key={index.toString()} href={html_url} target="_blank" rel="noreferrer">
+            <div  className={styles.card}>
                 <div id={styles.name}>
                     <img src="./assets/folder.svg" alt="Repositório" />
                     <h2>{name}</h2>

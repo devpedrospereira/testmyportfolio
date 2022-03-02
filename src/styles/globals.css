@@ -1,21 +1,25 @@
 :root{
   /* backgraund */
-  --violet-bg: #22212C;
-  --violet-light-bg: #302F3D;
+  --violet-bg: #1a1a1a;
+  --violet-light-bg: #2D2D2D;
   --red: #c73030;
 
   /* box-shadow */
   
-  --box-shadow: rgba(0,0,0,0.2);
+  --box-shadow: rgba(0, 0, 0, 0.199);
 
   /* texts */
-  --violet-light-text: #837E9F; 
+  --violet-light-text: #dadada; 
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body{
+  display: flex
 }
 
 html{
