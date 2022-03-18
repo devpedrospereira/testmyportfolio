@@ -65,6 +65,12 @@
         },
         {
             "technology":"GITHUB"
+        },
+        {
+            "technology":"TypeScript"
+        },
+        {
+            "technology":"Styled Components"
         }
     ],
     "languages":[

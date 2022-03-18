@@ -35,7 +35,7 @@
 
         @media (max-width: 1024px) {
             width: 100%;
-            height: 100%;
+            height: auto;
 
             gap:0.5rem;
 
@@ -91,8 +91,7 @@
     .card {
         // o calc abaixo foi utilizado para tornar os cards responsivos, de acordo com a tela do dispositivo
         width: calc(30vw - 1rem);
-        height: 11.62rem;
-
+        height: auto;
         display: flex;
         flex-direction: column;
 
@@ -105,6 +104,7 @@
         // border: 1px solid var(--red);
         
         box-shadow: 2px 2px  2px 1px var(--box-shadow);
+        
 
 
         #name {

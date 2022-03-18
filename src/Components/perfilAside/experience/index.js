@@ -9,10 +9,10 @@ export default function Experience(){
 
         return (
             <li key={index}>
-            <h2>{instituition}</h2>
-            <p>{period}</p>
-            <p>{job}</p>
-        </li>
+                <h2>{instituition}</h2>
+                <p>{period}</p>
+                <p>{job}</p>
+            </li>
         )
 
     })
