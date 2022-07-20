@@ -27,7 +27,7 @@ export default function Home() {
 
         <section className={styles.main}>
           <MyProjects/>
-          <a className={styles.creditWeb} href="https://www.rocketseat.com.br/" target="_blank " rel="noreferrer">Design by RocketSeat</a>
+          
         </section>
 
       </div>
